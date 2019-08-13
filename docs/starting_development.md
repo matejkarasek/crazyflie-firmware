@@ -9,7 +9,7 @@ This document should work for the Crazyflie 2.X.
 
 ## STM32
 
-These instructions cover Linux systems as well as Windows when running a Ubuntu WSL Bash.
+These instructions cover Linux systems as well as Windows 10 when running a Ubuntu WSL Bash.
 
 Clone the crazyflie-firmware project, or update it using the virtual
 machine \"Update all projects\" script. For Crazyflie 2.X make sure the current branch is \"**master**.\"
