@@ -47,19 +47,24 @@ sudo pacman -S community/arm-none-eabi-gcc community/arm-none-eabi-gdb community
 
 #### Windows
 
-The GCC ARM Embedded toolchain for Windows is available at [launchpad.net](https://launchpad.net/gcc-arm-embedded/+download). Download the zip archive rather than the executable installer. There are a few different systems for running UNIX-style shells and build systems on Windows; the instructions below are for [Cygwin](https://www.cygwin.com/).
+In Windows 10, the firmware can be developed within the Windows Subsystem for Linux (WSL). The following guide is writtent for Ubuntu 18.04:
 
-Install Cygwin with [setup-x86_64.exe](https://www.cygwin.com/setup-x86_64.exe). Use the standard `C:\cygwin64` installation directory and install at least the `make` and `git` packages.
+In Windows Store, install Ubuntu.
 
-Download the latest `gcc-arm-none-eabi-*-win32.zip` archive from [launchpad.net](https://launchpad.net/gcc-arm-embedded/+download). Create the directory `C:\cygwin64\opt\gcc-arm-none-eabi` and extract the contents of the zip file to it.
+In Ubuntu WSL, install git & make:
 
-Launch a Cygwin terminal and run the following to append to your `~/.bashrc` file:
 ```bash
-echo '[[ $PATH == */opt/gcc-arm-none-eabi/bin* ]] || export PATH=/opt/gcc-arm-none-eabi/bin:$PATH' >>~/.bashrc
-source ~/.bashrc
+sudo apt-get update
+sudo apt install git
+sudo apt install make
 ```
 
-Verify the toolchain installation with `arm-none-eabi-gcc --version`
+Further install the toolchain as in native Ubuntu (16.04 / 18.04)
+```bash
+sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
+sudo apt-get update
+sudo apt install gcc-arm-embedded
+```
 
 ### Cloning
 
