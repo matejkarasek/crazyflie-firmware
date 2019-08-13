@@ -9,6 +9,8 @@ This document should work for the Crazyflie 2.X.
 
 ### STM32
 
+## Linux
+
 Clone the crazyflie-firmware project, or update it using the virtual
 machine \"Update all projects\" script. For Crazyflie 2.X make sure the current branch is \"**master**.\"
 
@@ -45,6 +47,8 @@ programming cable
 ```
     crazyflie-firmware$ make flash
 ```
+
+
 
 #### Command line
 From command line the flash make target flashed the firmware using

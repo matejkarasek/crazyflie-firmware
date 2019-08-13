@@ -47,11 +47,11 @@ sudo pacman -S community/arm-none-eabi-gcc community/arm-none-eabi-gdb community
 
 #### Windows
 
-In Windows 10, the firmware can be developed within the Windows Subsystem for Linux (WSL). The following guide is writtent for Ubuntu 18.04:
+In Windows 10, the firmware can be developed within the Windows Subsystem for Linux (WSL). It is recommended to update your Windows 10 to version 1903 or newer.
 
-In Windows Store, install Ubuntu.
+In Microsoft Store, install Ubuntu (this guide is written for Ubuntu 18.04).
 
-In Ubuntu WSL, install git & make:
+Once installed, launch Ubuntu WSL and install git & make:
 
 ```bash
 sudo apt-get update
