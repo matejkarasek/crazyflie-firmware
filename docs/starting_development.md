@@ -68,6 +68,8 @@ https://github.com/bitcraze/crazyflie-clients-python/blob/master/README.md#windo
 
 Now you should be able to run cfloader from the Windows Power Shell.
 
+Further, install the USB driver for your Crazyradio PA via Zadig following these instructions: [add link to zadig page]
+
 To flash the firmware, you first need to launch Windows Power Shell and go to the crazyflie-firmware folder of your Ubuntu WSL (this wont work from the Command Prompt, you need to use the Windows Power Shell):
 ```
     cd \\wsl$\Ubuntu
@@ -76,7 +78,7 @@ To flash the firmware, you first need to launch Windows Power Shell and go to th
 
 Finally, you can flash the firmware by putting your Crazyflie into bootloader mode and running
 ```
-cfloader flash cflie.bin stm32-fw
+cfloader flash cf2.bin stm32-fw
 ```
 #### Flashing with debugger
 [to be added]
